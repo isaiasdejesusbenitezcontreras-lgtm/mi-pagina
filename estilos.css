@@ -1,0 +1,244 @@
+/* 🎨 PALETA DE COLORES DEL LOGO */
+:root {
+    --verde: #00923F;
+    --azul: #0099CC;
+    --amarillo: #FFD700;
+    --blanco: #FFFFFF;
+}
+
+/*  FONDO CON IMAGEN INSTITUCIONAL */
+body {
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    /* Animación suave */
+    animation: fadeIn 0.8s ease-in-out;
+
+    /* Texto en blanco para mejor lectura */
+    color: var(--blanco);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+}
+
+
+.navbar {
+    background-color: var(--verde) !important;
+    border-bottom: 6px solid var(--amarillo);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--amarillo) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--blanco) !important;
+}
+
+
+.navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.banner img {
+    max-height: 360px;
+    object-fit: cover;
+    border-bottom: 8px solid var(--verde);
+    filter: brightness(0.95);
+}
+
+
+h1 {
+    color: var(--verde);
+    font-weight: 900;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 var(--amarillo);
+}
+
+h2 {
+    color: var(--azul);
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.recuadro-relieve {
+    background: rgba(141, 139, 139, 0.92);
+    padding: 25px;
+    border-radius: 18px;
+    color: black;
+    box-shadow:
+        6px 6px 15px rgba(0, 0, 0, 0.25),
+        -4px -4px 10px rgba(255, 255, 255, 0.5);
+    border-left: 8px solid var(--verde);
+    transition: transform 0.25s ease;
+}
+
+.recuadro-relieve:hover {
+    transform: translateY(-7px) scale(1.02);
+}
+
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--verde), #007A35);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blanco);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+
+.card {
+    border-top: 8px solid var(--amarillo);
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    color: black;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.formulario-modern {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 18px;
+    color: black;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-top: 8px solid var(--verde);
+}
+
+
+.form-control {
+    border-radius: 12px;
+    border: 2px solid var(--verde);
+    padding-left: 45px;
+}
+
+.form-control:focus {
+    border-color: var(--amarillo);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--azul);
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 15px;
+    margin-top: 50px;
+    border-top: 6px solid var(--amarillo);
+    font-weight: bold;
+}
+
+
+
+/* ======= FORMULARIO ======= */
+form {
+    max-width: 650px;
+    margin: auto;
+    border-left: 5px solid #e9fa03;
+    border-radius: 10px;
+}
+
+form label {
+    font-weight: 600;
+    color: #22f307;
+}
+
+form .form-control {
+    border: 1.8px solid #73f0bc;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    background-color: #fdecec;
+}
+
+form .form-control:focus {
+    border-color: #03c53d;
+    box-shadow: 0 0 8px rgba(245, 241, 3, 0.3);
+}
+
+/* ======= BOTÓN ======= */
+.btn-primary {
+    background-color: var(--verde);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--verde)
+}
+
+/* ======= ESTILOS DEL TÍTULO ======= */
+h1 {
+    color: var(--verde);
+    margin-bottom: 25px;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #003366;
+    color: white;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 576px) {
+    form {
+        padding: 20px !important;
+    }
+}
